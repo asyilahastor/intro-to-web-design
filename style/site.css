@@ -1,8 +1,60 @@
 
 h2{
-	color:crimson;
+	color:powderblue;
 	text-decoration: overline;
 }
+
 p, li{
 	font-family: 'Courier New', Courier, monospace;
+	color:brown;
+}
+
+#banner{
+	background-color:darkkhaki;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#banner p{
+	margin:0;
+}
+
+#nav, nav{
+	background-color: aquamarine;
+	padding: 10px;
+	text-align: center;
+}
+
+#nav a, nav a{
+	color:navy;
+	text-decoration: none;
+	font-size: large;
+	margin-right: 10px;
+}
+
+#nav a:hover, nav a:hover{
+	background-color: #ff8400;
+	padding: 10px;
+}
+
+#footer, footer{
+	background-color: #ee8e5e;
+	min-height: 150%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer a, footer a{
+	color:#1500ff;
+	text-decoration: overline;
+}
+
+#main, main{
+	width:80%;
+	margin: 0 auto;
+}
+
+article{
+	margin-bottom: 50px;
 }
