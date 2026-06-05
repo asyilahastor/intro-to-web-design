@@ -55,7 +55,7 @@
     
     <article>
         <h2>Inquiries</h2>
-        <form action="confirmation.html">
+        <form action="confirmation.html" id="contactForm">
             <label for="name">Name: *</label>
             <input required type="text" id="name" name="fullname" />
             <br/>
@@ -71,6 +71,7 @@
             <textarea required cols="50" rows="15" maxlength="300" id="inquiry" name="inquiry"></textarea>
             <br/>
             <input type="submit">
+            <button type="button" onclick="ClearForm()">Clear</button>
         </form>
     </article>
     
@@ -80,5 +81,8 @@
         <a href="https://www.equinekl.com/" target="_blank">EKL</a>
     </footer>
     
+    <script src="scripts/site.js">
+        
+    </script>
 </body>
 </html>

@@ -29,7 +29,7 @@
 
             <!--This is to embedded video-->
             <h2>Horsey-horse</h2>
-            <iframe width=80% src="https://www.youtube.com/embed/q0VfGi1PNvw?si=MWJJGLoTYEpO8JB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="ytvid" src="https://www.youtube.com/embed/q0VfGi1PNvw?si=MWJJGLoTYEpO8JB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <h3>Welcome to Equine KL</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi sed veniam consectetur similique eveniet, consequatur sit nesciunt quia eligendi velit mollitia dolore, at, ut magni quo vel animi blanditiis facilis.</p>
@@ -39,10 +39,20 @@
             <audio controls>
                 <source src="audios/jungle.mp3" type="audio/mp3">
             </audio>
+            <br/>
+            <br/>
+            <br/>
+            <button id="jqueryBtn">Hide P Tags - Jquery</button>
+            <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
         </div>
+
         <div id="footer">
             <a href="https://www.equinekl.com/" target="_blank">EKL</a>
         </div>
 
+        <!--Always put jQuery on top-->
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/site.js"></script>
+        
     </body>
 </html>
