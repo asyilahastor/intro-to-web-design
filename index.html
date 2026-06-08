@@ -2,22 +2,35 @@
 <html> 
     <head> 
         <title>Equine Kuala Lumpur </title>
-		<link rel="stylesheet" href="style/site.css"/>
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="style/site.css"/>-->
     </head>
     <body> 
-        <div id="header">
-            <div id="banner">
+        <header>
+            <div id="banner" class="bg-secondary text-white text-center">
                 <p>Random Notification!</p>
             </div>
        
-            <div id="nav">
-                <!--Navigation Bar-->
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
-            </div>
-         </div>
-        <div id="main">
+            <!--bootstrap-->
+            <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Equine Kuala Lumpur</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="about_us.html">About Us</a>
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                            <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+        </header>
+        <main class="container">
             <h1 style="color: brown;">Homepage</h1>
             <hr/>
             <h2>Equine Kuala Lumpur 2</h2>
@@ -44,14 +57,15 @@
             <br/>
             <button id="jqueryBtn">Hide P Tags - Jquery</button>
             <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
-        </div>
+        </main>
 
-        <div id="footer">
+        <footer>
             <a href="https://www.equinekl.com/" target="_blank">EKL</a>
-        </div>
+        </footer>
 
         <!--Always put jQuery on top-->
         <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/site.js"></script>
         
     </body>

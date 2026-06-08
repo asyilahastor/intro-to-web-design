@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-	<link rel="stylesheet" href="style/site.css"/>
+	<link rel="stylesheet" href="style/bootstrap.min.css"/>
 </head>
 <body>
     <header>
-        <div id="banner">
-            <p>Random Notification!</p> 
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>Random Notification!</p>
         </div>
-        <nav>
-            <!--Navigation Bar-->
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
+    
+        <!--bootstrap-->
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Equine Kuala Lumpur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+                    </div>
+                </div>
+            </div>
         </nav>
+    
     </header>
 
-    <main>
+    <main class="container">
         <h1>Contact Us</h1>
         <hr/>
     <article>
-        <table>
+        <table class="table table-striped table-dark table-bordered table-hover">
             <tr>
                 <th>Yo1</th>
                 <th>Yo2</th>
@@ -81,8 +94,9 @@
         <a href="https://www.equinekl.com/" target="_blank">EKL</a>
     </footer>
     
-    <script src="scripts/site.js">
-        
-    </script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
+    
 </body>
 </html>
